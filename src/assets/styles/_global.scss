@@ -1,0 +1,205 @@
+@import "~material-colors/dist/colors.scss";
+@import "~material-colors/dist/colors.var";
+
+$primary: #000;
+
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-vue/src/index.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: $primary;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: local("BebasNeue"),
+    url("../font/BebasNeue\ Regular.ttf") format("truetype");
+}
+
+html {
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media screen and (min-width: 992px) {
+    font-size: 14px;
+  }
+}
+
+a {
+  color: $primary;
+  cursor: pointer;
+
+  &.add-edit {
+    color: var(--md-cyan-800);
+  }
+
+  &.delete {
+    color: red;
+  }
+}
+
+:placeholder-shown {
+  color: var(--md-grey-600);
+}
+
+.font-bebas {
+  font-family: "BebasNeue";
+  letter-spacing: 0.4rem;
+  color: #25523c ;
+}
+
+.font-putih {
+  font-family: "BebasNeue";
+  letter-spacing: 0.4rem;
+  color: #fff !important;
+}
+
+.has-bottom-menu {
+  margin-bottom: 50px;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+.width-200 {
+  width: 200px;
+}
+
+.b-toaster.b-toaster-top-right {
+  top: 50px;
+}
+
+.b-toast {
+  box-shadow: 0 10px 15px -5px rgba(black, 0.05);
+}
+
+.mx-datepicker {
+  width: 100% !important;
+}
+
+.mx-input {
+  .is-invalid & {
+    border-color: $danger;
+  }
+}
+
+.vue-numeric-input {
+  width: 100% !important;
+
+  .numeric-input {
+    height: calc(1.5em + 0.75rem + 2px);
+    outline: 0;
+    padding-left: 2.4rem !important;
+    padding-right: 2.4rem !important;
+  }
+
+  .btn {
+    height: 1.5rem;
+    top: 50% !important;
+    transform: translateY(-50%);
+
+    &-decrement {
+      left: 0.5rem !important;
+    }
+
+    &-increment {
+      right: 0.5rem !important;
+    }
+  }
+}
+
+.vs__dropdown-toggle {
+  .is-invalid & {
+    border-color: $danger;
+  }
+
+  .vs__actions svg {
+    vertical-align: initial;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.btn-cancel,
+.btn-close {
+  color: red;
+  &.btn-cancel:hover {
+    color: white;
+  }
+}
+
+.no-data {
+  position: absolute;
+  top: 50%;
+  left: 46.5%;
+  z-index: 2;
+}
+
+.status {
+  width: 100px;
+}
+
+.statusClose {
+  background-color: #28a745;
+}
+
+.statusOverdue {
+  background-color: #017bfe;
+}
+
+.statusOnProgress {
+  background-color: #ffc007;
+}
+
+.statusOpen {
+  background-color: #14a2b8;
+}
+
+.statusCancel {
+  background-color: #dc3444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.border-color-custom {
+  border: 3px solid rgba(65, 65, 65, 255);
+  box-shadow: 0 0 2px rgba(black, 0.8);
+}
+
+.orange-custom-color {
+  background-color: rgba(228, 170, 82, 255);
+}
+
+.custom-font-color {
+  color: rgba(65, 65, 65, 255);
+}
+
+.green-color {
+  background-color: #25523c;
+}
+
+.border-orange {
+  border: 3px solid rgba(228, 170, 82, 255) ;
+  box-shadow: 0 0 2px rgba(black, 0.8);
+}
+
+// #25523c
